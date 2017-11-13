@@ -1,0 +1,16 @@
+h1{
+	color:teal;
+}
+body {
+
+	background-image: url('globe.jpg');
+	
+}
+
+button {
+
+    color: blue;
+    background-color: #7fca7f;
+    border: 2px solid #334452;
+    border-radius: 30px;
+}
