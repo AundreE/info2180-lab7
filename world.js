@@ -22,7 +22,6 @@ $(document).ready(function()
             alert(data); 
             $("#result").append(data);
          }).fail(function()
-         
          {
              alert("ERROR!");
          });
@@ -30,5 +29,16 @@ $(document).ready(function()
      }
      
      
- }); 
+ });
  
+ function searchAll(){
+     var url = 'https://lab7-riddimboss.c9users.io/world.php?all=true';
+     
+     $.ajax(url,{
+         method: 'GET',
+     }).done(function(res){
+         $("#result").html(res);
+     }).fail(function(fail){
+         $("#result").html('<b>AJAX ERROR</b>');
+     });
+  }
